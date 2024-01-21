@@ -9,8 +9,6 @@ import (
 var (
 	xOutRange = errors.New(" X fuera de rango")
 	yOutRange = errors.New(" Y fuera de rango")
-	val       = 4
-	pun       = &val
 )
 
 type Vertex struct {
@@ -35,7 +33,6 @@ func (v *Vertex) Scale(f float64) error {
 }
 
 func main() {
-	fmt.Println(val, pun)
 
 	v := Vertex{2, 20}
 	err := v.Scale(10)
